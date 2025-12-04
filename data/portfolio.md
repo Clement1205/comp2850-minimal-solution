@@ -268,14 +268,14 @@ Inclusion: Medium.
 Effort: Low.
 Priority Score: 3 + 3 − 2 = 4
 
-/Citation: These findings are formatted by ChatGPT/
+/Citation: These findings are created by me but formatted by ChatGPT/
 
 Fixes To Implement
 In this section you will select and explain up to three fixes you will be making based on your findings from the table.
 These should be high priority findings, particularly those with WCAG Level A issues.
 Fix 1
-Finding: [the finding from the table above]
-Explanation: [explain what the current issue is in simple terms]
+Finding: [Inline Edit Does Not Work in No-JS Mode]
+Explanation: [Cannot edit tasks in NO-JS Mode]
 Original Code: [paste/screenshot the code which you believe caused this error]
 Fix: [Explain how you fixed this issue or explain what you did if you cannot work out how to fix the issue in a reasonable amount of time]
 Final Code: [paste/screenshot the final, edited code of your fix – if you used generative AI to support your coding you should acknowledge that here.]
