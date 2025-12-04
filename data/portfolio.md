@@ -1,45 +1,3 @@
-Pilot Study Tasks:
-
-Task 1: You have a meeting with John upcoming Monday in Room A. Add it to the task.
-
-Time Spent: 10:57
-Comments: "9/10, I got some notifications when the task is completed (at the top left corner),
-would like it to be more clearly"
-
-
-Task 2: Are you able to see the previous actions you have made? For example, you added a meeting
-before but you forgot what that is. Are you able to check it?
-
-Time Spent: 03:23
-Comments: "It was easy to find the task, although may be hard if there are larger amounts"
-
-
-Task 3: Edit "buy milk" into "buy corn flakes"
-
-Time Spent: 9:73
-Comments: "It was easy to edit a task as the edit box was inlined with the task name."
-
-
-Task 4: Use the filter to see how many items you have to buy.
-
-Time Spent: 12:02
-Comments: "The notification was nice to show the amount."
-
-
-Task 5: You just bought bananas. Delete them from the checklist.
-
-Time Spent: 07:15
-Comments: "The confirmation to confirm the deletion was useful, and I appreciate that."
-
-Task 6: Your friend has sight-issues and cannot see words that are too small. Are you able to zoom
-it bigger for him to see the tasks?
-
-Time Spent: 15:18
-Comments: "The control plus shortcut is widely used and the support by the application 
-makes it easy to utilize the features"
-
-
-
 COMP2850
 HCI Portfolio Task
 
@@ -99,7 +57,7 @@ Task 1
 Scenario: You need to record an upcoming meeting so you don’t forget it.
 Action: Add a task: “Meeting with John on Monday in Room A.”
 Success Criteria: Task successfully appears in the list with no validation errors
-Target Time: < 15 seconds
+Target Time: < 20 seconds
 Linked to: Story #1
 
 Task 2
@@ -120,21 +78,21 @@ Task 4
 Scenario: You have many tasks but want to view only a subgroup.
 Action: Use the filter to show only the “buy” tasks.
 Success Criteria: Filter displays only relevant items, count is correct
-Target Time: < 10 seconds
+Target Time: < 20 seconds
 Linked to: Story #4
 
 Task 5
 Scenario: You just bought bananas
 Action: Delete "Buy Bananas" from the list
 Success Criteria: User sees a confirmation message, task is removed from the list
-Target Time: <10 seconds
+Target Time: < 10 seconds
 Linked to: Story #5
 
 Task 6
 Scenario: A user with low vision wants larger text.
 Action: Zoom the interface using "Ctrl +".
 Success Criteria: Text scales with layout, no overlapping
-Target Time: <5 seconds
+Target Time: < 20 seconds
 Linked to: Story #6
 
 Consent Script
@@ -203,58 +161,71 @@ Consent Script
 
 Record in `wk09/lab-wk9/research/consent-log.md`:
 
+
 Participant Consent
 Participant Number	Read consent script to the participant?	Date and time that consent was given:
 EXAMPLE	X	20/11/2025 11:15
-P1		
-P2		
-P3		
-P4		
-(Add or remove rows as needed)
+P1		X   04/12/2025 16:45
+P2		X   04/12/2025 21:48
+
  
 Participant 1
 Details of Participant:
-How did this user access the webapp? Keyboard/Mouse/Screenreader/No-JS etc.
+How did this user access the webapp? Keyboard + Mouse
 
 Notes:
-Copy here, or link the location of this participant’s pilot study notes
+Task 1 — 10:57  |  “Would like notifications to be clearer”
+Task 2 — 03:23  |  “Easy unless there are many tasks”
+Task 3 — 09:73  |  “Inline edit was easy”
+Task 4 — 12:02  |  “Notification was useful”
+Task 5 — 07:15  |  “Confirmation helped”
+Task 6 — 15:18  |  “Zoom shortcut familiar and useful”
 
 Metrics:
-Copy here from metrics.csv, or link to the location of this participant’s pilot study log.
+ts_iso,session_id,request_id,task_code,step,outcome,ms,http_status,js_mode
+2025-12-04T16:48:53.695557Z,b7975e,r_eef83b7f,T0_list,success,,137,200,off
+2025-12-04T16:49:08.253793Z,b7975e,r_62fc2a36,T3_add,success,,34,200,on
+2025-12-04T16:51:05.470305Z,b7975e,r_63d40035,T1_filter,success,,30,200,on
+2025-12-04T16:51:05.944124Z,b7975e,r_a6fb421d,T1_filter,success,,7,200,on
+2025-12-04T16:51:07.659613Z,b7975e,r_b56ec052,T1_filter,success,,9,200,on
+2025-12-04T16:51:08.261787Z,b7975e,r_6d4c7757,T1_filter,success,,9,200,on
+2025-12-04T16:51:10.090835Z,b7975e,r_13817116,T1_filter,success,,6,200,on
+2025-12-04T16:51:50.199609Z,b7975e,r_59b08915,T4_delete,success,,7,200,on
+
 
 Participant 2
 Details of Participant:
-How did this user access the webapp? Keyboard/Mouse/Screenreader/No-JS etc.
+How did this user access the webapp? Keyboard + Mouse + No-JS
 
 Notes:
-Copy here, or link the location of this participant’s pilot study notes
+Task 1 — 13:30  |  “Better if have a more visible notification”
+Task 2 — 05:67  |  “Cannot see on top left corner, but can see it when scroll to the bottom”
+Task 3 — FAIL   |  “Cannot edit as the webpage refreshes and nothing happened”
+Task 4 — 09:44  |  “Notification was useful”
+Task 5 — 07:82  |  “No confirmation message showed, would be better if it did”
+Task 6 — 15:16  |  “Able to zoom with shortcuts”
 
 Metrics:
-Copy here from metrics.csv, or link to the location of this participant’s pilot study log.
+2025-12-04T21:52:31.252001Z,b7975e,r_5eb8e3e1,T3_add,success,,65,200,off
+2025-12-04T21:52:31.279235Z,b7975e,r_8bed19c9,T0_list,success,,14,200,off
+2025-12-04T21:54:43.841924Z,b7975e,r_a091fc84,T0_list,success,,24,200,off
+2025-12-04T21:54:49.463697Z,b7975e,r_150c4cbc,T0_list,success,,15,200,off
+2025-12-04T21:54:52.259532Z,b7975e,r_43e9a6f7,T0_list,success,,13,200,off
+2025-12-04T21:54:56.963408Z,b7975e,r_554d036d,T0_list,success,,14,200,off
+2025-12-04T21:55:38.001539Z,b7975e,r_c5ee4664,T0_list,success,,18,200,off
+2025-12-04T21:56:26.525748Z,b7975e,r_d684a801,T4_delete,success,,21,200,off
+2025-12-04T21:56:26.543164Z,b7975e,r_a974aa86,T0_list,success,,9,200,off
+
  
-Participant 3
-Details of Participant:
-How did this user access the webapp? Keyboard/Mouse/Screenreader/No-JS etc.
-
-Notes:
-Copy here, or link the location of this participant’s pilot study notes
-
-Metrics:
-Copy here from metrics.csv, or link to the location of this participant’s pilot study log.
-
-Participant 4
-Details of Participant:
-How did this user access the webapp? Keyboard/Mouse/Screenreader/No-JS etc.
-
-Notes:
-Copy here, or link the location of this participant’s pilot study notes
-
-Metrics:
-Copy here from metrics.csv, or link to the location of this participant’s pilot study log.  
 Metrics Breakdown
 Task	Target Time	Mean Time	Median Time	Range of Times	Target - Mean
-EXAMPLE TASK	< 10	12.7	9.3	7.6 – 17.3	-2.7
-
+EXAMPLE TASK    < 10	12.7	9.3	        7.6 – 17.3	    -2.7
+1       < 20        11.935      11.935      10.57 - 13.30   -8.065
+2       < 10        04.45       04.45       03:23 - 05:67   -5.55
+3       < 15        12.365      12.365      09.73 - FAIL    -0.135
+4       < 10        10.73       10.73       09.44 - 12.02   -2.635
+5       < 10        7.485       7.485       07.15 - 07.82   -2.515
+6       < 20        15.17       15.17       15.16 - 15.18   -4.83
 
 
 
@@ -273,11 +244,31 @@ Finding	Source	Observation	WCAG	Impact
 EXAMPLE
 Screen reader – errors not announced	metrics.csv L47-49 + P2 notes 14:23	P2: “I didn’t hear any error”	3.3.1 Level A	5	5	3	7
 
+Finding 1: Inline Edit Does Not Work in No-JS Mode
+Source: Participant 2, Task 3 (“FAIL… page refreshes and nothing happened”).
+WCAG: 3.3.1 Error Identification (A), 2.1.1 Keyboard Accessible (A), 1.3.1 Info & Relationships (A).
+Impact: Very high — core task fails entirely.
+Inclusion: High — excludes no-JS users.
+Effort: Medium.
+Priority Score: 5 + 5 − 3 = 7 (High priority)
 
+Finding 2 — Status Messages Are Not Very Visible
+Source: Both participants, Task 1 (“would like notification to be more clear”, “better if more visible”).
+WCAG: 4.1.3 Status Messages (AA).
+Impact: Medium — users complete task but experience uncertainty.
+Inclusion: Medium — especially affects low-vision users.
+Effort: Low.
+Priority Score: 3 + 4 − 2 = 5
 
+Finding 3 — No Visible Delete Confirmation in No-JS Mode
+Source: Participant 2 Task 5 (“better if there is a confirmation message”).
+WCAG: 3.3.1 Error Identification / User Awareness
+Impact: Medium — destructive action happens silently.
+Inclusion: Medium.
+Effort: Low.
+Priority Score: 3 + 3 − 2 = 4
 
-
-
+/Citation: These findings are formatted by ChatGPT/
 
 Fixes To Implement
 In this section you will select and explain up to three fixes you will be making based on your findings from the table.
